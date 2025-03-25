@@ -17,3 +17,4 @@
    pip install -r requirements.txt  # nornir, netmiko  
 python nornir_scripts/get_versions.py  
 
+![Runbook Output Example](/images/output.png)
