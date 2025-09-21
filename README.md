@@ -1,20 +1,76 @@
 # cisco-automation-runbook
-# Cisco Automation Runbook with Nornir  
 
-🚀 **Purpose**: Automatically retrieve software versions from Cisco routers (expandable to NTP config).  
+Automate Cisco router version checks using Nornir and Python
 
-## 🔧 Features  
-- Uses **Nornir** + **VS Code** for network automation  
-- Retrieves `show version` from Cisco devices  
-- Modular design (easy to extend to NTP/other commands)  
+## Overview
 
-## 🛠️ Tech Stack  
-`Python` | `Nornir` | `Cisco IOS` | `Netmiko`  
+This repository contains Python automation scripts for infrastructure management.
 
-## 📦 Setup  
-1. Install dependencies:  
-   ```bash  
-   pip install -r requirements.txt  # nornir, netmiko  
-python nornir_scripts/get_versions.py  
+## Prerequisites
 
-![Runbook Output Example](/images/output.png)
+- Python 3.8+
+- pip package manager
+- Required Python packages (see requirements.txt)
+
+## Installation
+
+\\\ash
+# Clone the repository
+git clone https://github.com/InfraPlatformer/cisco-automation-runbook.git
+cd cisco-automation-runbook
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+\\\
+
+## Usage
+
+\\\ash
+# Run the main script
+python main.py
+
+# Or run specific modules
+python -m module_name
+\\\
+
+## Configuration
+
+1. Copy \config.example.json\ to \config.json\
+2. Update configuration values as needed
+
+## Project Structure
+
+\\\
+cisco-automation-runbook/
+├── src/                    # Source code
+├── config/                 # Configuration files
+├── tests/                  # Test files
+├── docs/                   # Documentation
+├── requirements.txt        # Python dependencies
+├── README.md              # This file
+└── .gitignore             # Git ignore rules
+\\\
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Last Updated
+
+2025-09-21
+
+## Author
+
+[Alam Ahmed](https://github.com/InfraPlatformer)
